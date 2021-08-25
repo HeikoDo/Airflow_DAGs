@@ -6,12 +6,12 @@ from includes.vs_modules.test import hello
 # https://www.youtube.com/watch?v=IsWfoXY_Duk
 
 args = {
-    "owner": "Vincent Stevenson",
+    "owner": "Heiko",
     "start_date": days_ago(1),  # make start date in the past
 }
 
 dag = DAG(
-    dag_id="crm-elastic-dag",
+    dag_id="Demo-DAG",
     default_args=args,
     schedule_interval="@daily",  # make this workflow happen every day
 )
